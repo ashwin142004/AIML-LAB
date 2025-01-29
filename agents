@@ -1,0 +1,79 @@
+AIML
+
+Agents
+An agent is a computer program that perceives its environment through sensors and acts upon it using actuators 
+
+Ex: 
+Human Agent 
+Robotic Agent 
+Software Agent
+
+Agent Architecture
+Sensors  ——————-Percepts - |
+	|							|
+	|							|
+	?  					   Environment
+	|							|
+	|							|
+Actuators  ——————Actions— 	|
+
+
+
+An environment is the part of the universe that affects the agent and is affected by the agent 
+- Real world
+- Digital
+
+What is percept?
+- What an agent perceives at a given time 
+
+Sequence 
+- History of everything the agent has perceived 
+- Helps the agent make informed decisions 
+- Can be stored and analysed for future actions
+
+Agent Function
+- Maps the percept sequences to actions
+- Math Rep: f: P* —> A
+	Where 
+        - P* => Set of all percepts sequence
+        - A => Set of all Actions
+
+How agents make decisions 
+- Built in knowledge (Pre programmed rules, AI models)
+- Percept Sequence (Past experiences)
+
+*Agents can not act on something that they have not perceived before.
+
+
+Agent Function vs Agent Program
+
+Function: 
+	Abstract mathematical mapping from the percept sequences to the actions 
+	Can be represented as a large table listing all possible percepts and corresponding actions
+
+Program: 
+	The actual implementation of the agent function 
+	Runs within a physical system 
+
+Why is the agent function so large?
+- Grows infinitely unless a limit is set on the percept sequence length 
+
+What makes an agent good or bad?
+- Efficiency 
+- Adaptability 
+- Correctness
+- Resource Usage
+
+
+Simple reflex agents 
+- A simple reflex agent selects actions based only on the current percept 
+- Ignores the History of past percepts 
+
+strengths and limitations 
+- fast decision makeing 
+- efficient computation
+- works well in predictable environments
+
+x No memory 
+x fails in complex scenarios
+x Limited intelligence 
