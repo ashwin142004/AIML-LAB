@@ -77,3 +77,4 @@ strengths and limitations
 x No memory 
 x fails in complex scenarios
 x Limited intelligence 
+
