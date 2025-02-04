@@ -1,0 +1,30 @@
+Searching Problems 
+Thre main components 
+    A State Space. Set of all possible states where you can be.
+    A Start State. The state from where the search begins.
+    A Goal State. A function that looks at the current state returns whether or not it is the goal state.
+    
+    There are 3 types of goal state
+        Single goal state
+        Set of goal states 
+        property goal state(Goal property)
+
+Two types of searching 
+    Informed search - Here, the algorithms have information on the goal state, which helps in more efficient searching. This information is obtained by something called a heuristic. 
+        - Best first Search 
+        - A* Search
+        - Greedy Search
+
+    Uniniformed search - The search algorithms in this section have no additional information on the goal node other than the one provided in the problem definition. 
+                        Also called Blind Search
+        - DFS 
+        - BFS 
+        - Uniform Cost Search
+
+
+
+
+Best First Search 
+
+
+
