@@ -1,10 +1,11 @@
 from queue import PriorityQueue
 
-v = 14  # Number of vertices
+v = 4  # Number of vertices
 graph = [[] for _ in range(v)]
 
 # Example heuristic values for each node (h(n)), assuming target is node 9
-heuristics = [10, 8, 5, 7, 3, 6, 4, 2, 1, 0, 3, 6, 5, 4]  
+# heuristics = [10, 8, 5, 7, 3, 6, 4, 2, 1, 0, 3, 6, 5, 4]  
+heuristics = [10, 1, 2, 0]
 
 def best_first_search(actual_Src, target, n):
     visited = [False] * n
@@ -31,20 +32,28 @@ def addedge(x, y, cost):
     graph[y].append((x, cost))
 
 # Sample Graph Edges
-addedge(0, 1, 3)
-addedge(0, 2, 6)
-addedge(0, 3, 5)
-addedge(1, 4, 9)
-addedge(1, 5, 8)
-addedge(2, 6, 12)
-addedge(2, 7, 14)
-addedge(3, 8, 7)
-addedge(8, 9, 5)
-addedge(8, 10, 6)
-addedge(9, 11, 1)
-addedge(9, 12, 10)
-addedge(9, 13, 2)
+# addedge(0, 1, 3)
+# addedge(0, 2, 6)
+# addedge(0, 3, 5)
+# addedge(1, 4, 9)
+# addedge(1, 5, 8)
+# addedge(2, 6, 12)
+# addedge(2, 7, 14)
+# addedge(3, 8, 7)
+# addedge(8, 9, 5)
+# addedge(8, 10, 6)
+# addedge(9, 11, 1)
+# addedge(9, 12, 10)
+# addedge(9, 13, 2)
+
+addedge(0, 1, 1)
+addedge(0, 2, 4)
+addedge(1, 3, 1)
+addedge(2, 3, 2)
 
 source = 0
-target = 9
+target = 3
+
+# source = 0
+# target = 9
 best_first_search(source, target, v)
