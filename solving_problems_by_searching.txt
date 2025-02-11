@@ -27,4 +27,46 @@ Two types of searching
 Best First Search 
 
 
+ways to deal with redundancy in search Problems
+- Tracking already visited nodes
+- Ignoring past states
+- Detecting only cycles
 
+
+Measure Performance of algorithms
+1. Completeness
+2. cost optimality 
+3. Time complexity
+4. Space complexity
+
+
+
+Informed Search 
+ - Greedy Best first search 
+    f(n) = h(n)
+    straight line distance
+    - fast but suboptimal
+    - complete finite space
+    - compexity 
+        Time : O(V)
+        Space : O(V)
+    
+
+    S(7) - A(6) - B(4) - C(3)
+            |       |
+    D(6) - e(5) - F(2) - G(0) 
+
+Soln:
+    S -> A -> B -> F -> G
+
+ - A* Search
+    f(n) = g(n) + h(n)
+    -g(n) => actual cost
+    -h(n) => heuristic
+
+    Features
+     - Admissibility
+     - Consistency
+     - optimality
+     - Efficiencly
+     
