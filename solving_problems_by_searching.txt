@@ -72,6 +72,33 @@ Soln:
      
 
 Uniniformed Search
+
+-BFS
+BFS(problem) returns a solution node or failure
+    node <- Node(problem.Initial)
+    if problem.is_goal(node.State) then return node
+    frontier <- a fifo queue, with node as an element
+    reached <- {problem.Initial}
+    while not is_empty(frontier) do
+        node <- child.State
+        if problem.is_goal(s) then return child
+        if s is not in reached then
+            add s to reached
+            add child to frontier
+    return failure
+
+
+Dijkstras algorithm
+ - Uniform cost search
+ - uses variation of BFS
+ - f(n) = pathcost(n)
+ - cost optimal solution
+ - complete
+ - Time complexity :- O(b^d)
+ - Time complexity of UCS :- O(b^(1+C*/E))
+
+
+
 -DFS
 DFS(problem) returns a solution node or failure  
     node <- Node(problem.Initial)  
@@ -88,17 +115,14 @@ DFS(problem) returns a solution node or failure
                 add child to frontier  
     return failure  
 
+ - Deepest node first
+ - f(n) = -depth(n)
+ - suboptimal
+ - complete in finite state space
 
--BFS
-BFS(problem) returns a solution node or failure
-    node <- Node(problem.Initial)
-    if problem.is_goal(node.State) then return node
-    frontier <- a fifo queue, with node as an element
-    reached <- {problem.Initial}
-    while not is_empty(frontier) do
-        node <- child.State
-        if problem.is_goal(s) then return child
-        if s is not in reached then
-            add s to reached
-            add child to frontier
-    return failure
+  variants of DFS
+  - Backtracking Search - O(1)
+  - Dept limited - O(b^l)
+  - iterative deepening search (IDS) - O(b^d)
+
+ 
