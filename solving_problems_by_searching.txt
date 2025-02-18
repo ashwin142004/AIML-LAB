@@ -70,3 +70,35 @@ Soln:
      - optimality
      - Efficiencly
      
+
+Uniniformed Search
+-DFS
+DFS(problem) returns a solution node or failure  
+    node <- Node(problem.Initial)  
+    if problem.is_goal(node.State) then return node  
+    frontier <- a stack (LIFO), with node as an element  
+    reached <- {problem.Initial}  
+    while not is_empty(frontier) do  
+        node <- frontier.pop()  
+        if problem.is_goal(node.State) then return node  
+        for child in Expand(node) do  
+            s <- child.State  
+            if s is not in reached then  
+                add s to reached  
+                add child to frontier  
+    return failure  
+
+
+-BFS
+BFS(problem) returns a solution node or failure
+    node <- Node(problem.Initial)
+    if problem.is_goal(node.State) then return node
+    frontier <- a fifo queue, with node as an element
+    reached <- {problem.Initial}
+    while not is_empty(frontier) do
+        node <- child.State
+        if problem.is_goal(s) then return child
+        if s is not in reached then
+            add s to reached
+            add child to frontier
+    return failure
