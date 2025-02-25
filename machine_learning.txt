@@ -1,0 +1,24 @@
+Machine learning teaches computers to recognize patterns and make decisions automatically using data and algorithms.
+
+It can be broadly categorized into three types:
+
+Supervised Learning: Trains models on labeled data to predict or classify new, unseen data.
+Unsupervised Learning: Finds patterns or groups in unlabeled data, like clustering or dimensionality reduction.
+Reinforcement Learning: Learns through trial and error to maximize rewards, ideal for decision-making tasks.
+
+Well Posed Learning Problem – A computer program is said to learn from experience E in context to some task T and some performance measure P, if its performance on T, as was measured by P, upgrades with experience E. 
+
+Any problem can be segregated as well-posed learning problem if it has three traits – 
+
+Task
+Performance Measure 
+Experience 
+
+
+ex: Autonomous Vehicles
+Task – driving on public four-lane highways using sight scanners
+Performance Measure – average distance progressed before a fallacy
+Experience – order of images and steering instructions noted down while observing a human driver
+
+
+
