@@ -20,5 +20,43 @@ Task – driving on public four-lane highways using sight scanners
 Performance Measure – average distance progressed before a fallacy
 Experience – order of images and steering instructions noted down while observing a human driver
 
+Machine Learning Pipeline
+Choosing Training Examples – Selecting relevant data points from a dataset that will be used for training the model. This step ensures that the dataset is representative and diverse enough to generalize well.
+
+Choosing Target Function – Defining what the model should learn. This involves selecting an appropriate function (hypothesis) that maps inputs (features) to outputs (labels) in a supervised learning setup.
+
+Defining the Target Function – Formally specifying the function the model will approximate. In many cases, this function is unknown, and the model learns an approximation using training data.
+
+Choosing Algorithm – Selecting a learning algorithm (e.g., decision trees, neural networks, support vector machines) that will be used to train the model on the given dataset and optimize the chosen target function.
+
+Finalizing the Design of the System – Implementing the chosen model, tuning hyperparameters, optimizing performance, and deploying the system for real-world use.
+
+
+Concept Learning
+Concept learning in machine learning refers to the process of teaching a machine to identify and recognize patterns from specific examples or data points. In simple terms, concept learning involves learning a general rule from a set of observed instances. 
+
+
+Find S Algorithm
+1. Initialize h to the most specific hypothesis in H
+2. For each positive training instance x
+    For each attribute constraint a, in h
+        If the constraint a, is satisfied by x
+        Then do nothing
+        Else replace a, in h by the next more general constraint that is satisfied by x
+3. Output hypothesis h
+
+
+
+1 h = { GREEN, HARD, NO, WRINKLED } 
+2 h = { GREEN, HARD, NO, WRINKLED } 
+3 h = { GREEN, HARD, NO, WRINKLED } 
+4 h = { ?, HARD, NO, WRINKLED } 
+5 h = { GREEN, ?, ?, ? }
+6 h = { GREEN, HARD, ?, WRINKLED} 
+7 h = { ?, HARD, NO, WRINKLED}
+
+Final: h = { ?, ?, ?, ? } 
+
+
 
 
