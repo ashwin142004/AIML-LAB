@@ -1,0 +1,76 @@
+Machine learning teaches computers to recognize patterns and make decisions automatically using data and algorithms.
+
+It can be broadly categorized into three types:
+
+Supervised Learning: Trains models on labeled data to predict or classify new, unseen data.
+Unsupervised Learning: Finds patterns or groups in unlabeled data, like clustering or dimensionality reduction.
+Reinforcement Learning: Learns through trial and error to maximize rewards, ideal for decision-making tasks.
+
+Well Posed Learning Problem – A computer program is said to learn from experience E in context to some task T and some performance measure P, if its performance on T, as was measured by P, upgrades with experience E. 
+
+Any problem can be segregated as well-posed learning problem if it has three traits – 
+
+Task
+Performance Measure 
+Experience 
+
+
+ex: Autonomous Vehicles
+Task – driving on public four-lane highways using sight scanners
+Performance Measure – average distance progressed before a fallacy
+Experience – order of images and steering instructions noted down while observing a human driver
+
+Machine Learning Pipeline
+Choosing Training Examples – Selecting relevant data points from a dataset that will be used for training the model. This step ensures that the dataset is representative and diverse enough to generalize well.
+
+Choosing Target Function – Defining what the model should learn. This involves selecting an appropriate function (hypothesis) that maps inputs (features) to outputs (labels) in a supervised learning setup.
+
+Defining the Target Function – Formally specifying the function the model will approximate. In many cases, this function is unknown, and the model learns an approximation using training data.
+
+Choosing Algorithm – Selecting a learning algorithm (e.g., decision trees, neural networks, support vector machines) that will be used to train the model on the given dataset and optimize the chosen target function.
+
+Finalizing the Design of the System – Implementing the chosen model, tuning hyperparameters, optimizing performance, and deploying the system for real-world use.
+
+
+Concept Learning
+Concept learning in machine learning refers to the process of teaching a machine to identify and recognize patterns from specific examples or data points. In simple terms, concept learning involves learning a general rule from a set of observed instances. 
+
+
+Find S Algorithm
+1. Initialize h to the most specific hypothesis in H
+2. For each positive training instance x
+    For each attribute constraint a, in h
+        If the constraint a, is satisfied by x
+        Then do nothing
+        Else replace a, in h by the next more general constraint that is satisfied by x
+3. Output hypothesis h
+
+also called maximally specific hypothesis
+
+
+1 h = { GREEN, HARD, NO, WRINKLED } 
+2 h = { GREEN, HARD, NO, WRINKLED } 
+3 h = { GREEN, HARD, NO, WRINKLED } 
+4 h = { ?, HARD, NO, WRINKLED } 
+5 h = { GREEN, ?, ?, ? }
+6 h = { GREEN, HARD, ?, WRINKLED} 
+7 h = { ?, HARD, NO, WRINKLED}
+
+Final: h = { ?, ?, ?, ? } 
+
+
+Candidate Elimination Algorithm
+
+Step1: Load Data set
+Step2: Initialize General Hypothesis  and Specific  Hypothesis.
+Step3: For each training example  
+Step4: If example is positive example  
+          if attribute_value == hypothesis_value:
+             Do nothing  
+          else:
+             replace attribute value with '?' (Basically generalizing it)
+Step5: If example is Negative example  
+          Make generalize hypothesis more specific.
+
+
+
