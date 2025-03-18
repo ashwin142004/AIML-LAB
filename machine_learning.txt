@@ -91,5 +91,26 @@ S4 = <?, ?, good, yes> G4 = {[?, high, ?, ?], [?, ?, ?, yes]}
 
 
 
+Decision tree
+
+A v [ B ^ C]
 
 
+            A
+        T       F
+        /       |
+        T       B
+              T    F
+              |     |
+              C     F     
+            T   F
+            T   F
+
+A XOR B
+
+            A
+            /\
+            T  F
+           /    \
+         B      B
+        
