@@ -1,0 +1,15 @@
+Architecture
+-input layer
+- Hidden, intermediate, or invisible layer
+- Output layer
+
+how layers are interconnected:
+- single layer feedforward networks
+- multi layer feedforward networks
+- recurrent or feedback Architecture
+- Mesh Architectures
+
+Perceptron
+Single Layered network
+representational power of perceptrons 
+linearly seperable 
