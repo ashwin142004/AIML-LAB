@@ -13,3 +13,17 @@ Perceptron
 Single Layered network
 representational power of perceptrons 
 linearly seperable 
+
+
+Gradient Descent and the delta rule 
+https://vtupulse.com/machine-learning/gradient-descent-and-delta-rule/
+
+Features of gradient descent
+GD is an important general paradigm for learning. It is a strategy for searching through a large or infinite hypothesis space that can be applied whenever: 
+    the hypothesis space contains continuously parameterised hypothesis
+    the error can be differentiated with respect to these hypothesis parameters 
+
+the key practical difficulties in applying gradient descent are:
+    converging to a local minimum can sometimes be quite slow
+    if there are multiple local minima in the error surface, then there is no guarentee that the procedure will find the global minimum.
+
