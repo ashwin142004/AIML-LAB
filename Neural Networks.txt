@@ -27,3 +27,8 @@ the key practical difficulties in applying gradient descent are:
     converging to a local minimum can sometimes be quite slow
     if there are multiple local minima in the error surface, then there is no guarentee that the procedure will find the global minimum.
 
+
+Reinforcement learning
+    - addresses the question of how an autonomous agent that senses and acts in its environment can learn to chooses optimal actions to achieve its goals.
+    
+    
