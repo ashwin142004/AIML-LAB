@@ -1,0 +1,3 @@
+Reinforcement learning
+    - addresses the question of how an autonomous agent that senses and acts in its environment can learn to chooses optimal actions to achieve its goals.
+    
