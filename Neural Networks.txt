@@ -27,4 +27,6 @@ the key practical difficulties in applying gradient descent are:
     converging to a local minimum can sometimes be quite slow
     if there are multiple local minima in the error surface, then there is no guarentee that the procedure will find the global minimum.
 
+Naive Bayesian Classifier
 
+Condtional independence 
