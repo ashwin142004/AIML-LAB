@@ -1,3 +1,17 @@
 Reinforcement learning
     - addresses the question of how an autonomous agent that senses and acts in its environment can learn to chooses optimal actions to achieve its goals.
     
+Agent: The decision-maker that performs actions.
+Environment: The world or system in which the agent operates.
+State: The situation or condition the agent is currently in.
+Action: The possible moves or decisions the agent can make.
+Reward: The feedback or result from the environment based on the agent’s action.
+
+The RL process involves an agent performing actions in an environment, receiving rewards or penalties based on those actions, and adjusting its behavior accordingly. This loop helps the agent improve its decision-making over time to maximize the cumulative reward.
+
+Here’s a breakdown of RL components:
+
+Policy: A strategy that the agent uses to determine the next action based on the current state.
+Reward Function: A function that provides feedback on the actions taken, guiding the agent towards its goal.
+Value Function: Estimates the future cumulative rewards the agent will receive from a given state.
+Model of the Environment: A representation of the environment that predicts future states and rewards, aiding in planning.
