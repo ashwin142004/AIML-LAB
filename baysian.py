@@ -1,10 +1,10 @@
 import pandas as pd
-from pgmpy.models import BayesianNetwork
+from pgmpy.models import DiscreteBayesianNetwork as BayesianNetwork
 from pgmpy.estimators import MaximumLikelihoodEstimator
 from pgmpy.inference import VariableElimination
 
 # Step 1: Load dataset
-df = pd.read_csv("heart.csv")
+df = pd.read_csv("D:\\AIML-LAB\\heart.csv")
 
 # Step 2: Convert target to binary (1 = disease, 0 = no disease)
 df["target"] = df["target"].apply(lambda x: 1 if x > 0 else 0)
