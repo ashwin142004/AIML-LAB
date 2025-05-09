@@ -5,6 +5,7 @@ from pgmpy.inference import VariableElimination
 
 # Load and preprocess
 df = pd.read_csv("D:\\AIML-LAB\\heart.csv")
+
 df["target"] = (df["target"] > 0).astype(int)
 df = df[["age", "sex", "cp", "chol", "thalach", "target"]]
 df['age'] = pd.cut(df['age'], [28,40,55,77], labels=[0,1,2]).astype(int)

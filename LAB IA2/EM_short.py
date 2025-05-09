@@ -4,7 +4,7 @@ from sklearn.mixture import GaussianMixture
 np.random.seed(0)
 X = np.vstack([np.random.normal(-2,1,(300,2)), np.random.normal(2,1,(300,2))])
 
-gmm = GaussianMixture(n_components=2).fit(X)
+gmm = GaussianMixture(n_components = 2).fit(X)
 labels = gmm.predict(X)
 
 plt.scatter(X[:,0], X[:,1], c=labels, cmap='viridis', s=30)

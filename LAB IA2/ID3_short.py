@@ -28,5 +28,5 @@ tree = build(df)
 print("\nDecision Tree:\n")
 pprint(tree)
 
-sample = {'Outlook':'Rainy','Temperature':'Mild','Humidity':'Normal','Wind':'Strong'}
+sample = {'Outlook':'Rain','Temperature':'Mild','Humidity':'Normal','Wind':'Strong'}
 print("\nPrediction:",predict(tree,sample))
