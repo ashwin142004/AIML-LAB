@@ -1,3 +1,4 @@
+# Bayesian Network
 import pandas as pd
 from pgmpy.models import DiscreteBayesianNetwork as BN
 from pgmpy.estimators import MaximumLikelihoodEstimator

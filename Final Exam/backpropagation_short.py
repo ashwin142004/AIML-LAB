@@ -1,3 +1,4 @@
+#Backpropagation 
 import numpy as np
 
 # Input and normalization

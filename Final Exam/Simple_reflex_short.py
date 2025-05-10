@@ -1,3 +1,4 @@
+#Simple Reflex Agent
 import random
 
 GRID_SIZE = 3

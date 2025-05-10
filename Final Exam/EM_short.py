@@ -1,3 +1,4 @@
+#EM Algorithm 
 import numpy as np, matplotlib.pyplot as plt
 from sklearn.mixture import GaussianMixture
 

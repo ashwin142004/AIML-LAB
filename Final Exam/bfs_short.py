@@ -1,3 +1,4 @@
+#Best First Search
 import heapq
 
 h_dist = {'A': 10, 'B': 5, 'C': 2, 'D': 0}

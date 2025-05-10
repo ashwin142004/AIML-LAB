@@ -1,3 +1,4 @@
+#Constraints Satisfaction Problem (CSP)
 from itertools import permutations
 
 def solve_cryptarithm(equation):
